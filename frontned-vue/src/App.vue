@@ -3,11 +3,10 @@
     <v-app-bar
       app
       color="primary"
-      dense
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>My files</v-toolbar-title>
+      <v-toolbar-title>PRUEBA TÉCNICA PARA EL CARGO ANALISTA DE DESARROLLO PHP</v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -15,16 +14,21 @@
       app
     >
       <v-sheet
-        color="grey lighten-4"
+        color="primary"
         class="pa-4"
       >
         <v-avatar
           class="mb-4"
           color="grey darken-1"
           size="64"
-        ></v-avatar>
-
-        <div>brayan262@gmail.com</div>
+        >
+         <img
+            src="https://avatars.githubusercontent.com/u/25647752?v=4"
+            alt="BRACODEV"
+          >
+        </v-avatar>
+          <p class="font-weight-bold white--text">Brayan Rincón</p>
+          <p class="font-weight-bold white--text">brayan262@gmail.com</p>
       </v-sheet>
 
       <v-divider></v-divider>
@@ -67,7 +71,7 @@ export default {
     cards: ['Today', 'Yesterday'],
     drawer: null,
     links: [
-      {icon: 'mdi-books', text: 'Books', path: '/books'},
+      {icon: 'mdi-book-open-page-variant-outline', text: 'Books', path: '/books'},
     ],
   }),
 

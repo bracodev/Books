@@ -26,6 +26,6 @@ class Book extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'publishing' => 'datetime',
+        'publishing' => 'datetime:Y-m-d',
     ];
 }

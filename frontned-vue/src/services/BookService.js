@@ -10,6 +10,6 @@ import Service from '@/utils/Service'
  */
 export default class BookService extends Service {
   constructor () {
-    super('staff', null, true)
+    super('books')
   }
 }

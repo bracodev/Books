@@ -1,7 +1,8 @@
 import HttpClient from './HttpClient'
+import config from '@/config';
 import { trailingSlash } from './Helpers'
 
-const API_URL = process.env.VUE_API_URL
+const API_URL = config.api
 
 export default class ServiceBase {
   /**
@@ -66,7 +67,7 @@ export default class ServiceBase {
    *
    */
   checkToken () {
-    const authToken = ls.get('auth-token', false) || false
+    const authToken = null // ls.get('auth-token', false) || false
     if (authToken) {
       HttpClient.addDefaultHeader(
         'Authorization',

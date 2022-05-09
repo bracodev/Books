@@ -1,5 +1,8 @@
-import Vue from 'vue'
+import './filters'
+import './plugins'
+
 import App from './App.vue'
+import Vue from 'vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'

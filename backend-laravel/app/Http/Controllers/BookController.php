@@ -9,7 +9,7 @@ class BookController extends Controller
 {
     public function index(Request $request) {
         $size = $request->size ?? 5;
-        $data = Book::paginate($size);
+        $data['data'] = Book::paginate($size);
         return response()->json($data);
     }
 }

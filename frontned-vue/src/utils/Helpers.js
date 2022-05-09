@@ -4,6 +4,7 @@
  * @returns
  */
 export function trailingSlash (str) {
+  if(!str) return ''
   return str.endsWith('/') ? str : str + '/'
 }
   

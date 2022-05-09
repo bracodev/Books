@@ -5,7 +5,7 @@
     class="v-card--material v-crud--material"
   >
     <!-- CARD HEADER -->
-    <v-card-title>
+    <v-card-title class="mb-4">
 
       <v-sheet
         class="overflow-hidden transition-swing v-card--material__sheet"
@@ -21,7 +21,7 @@
         >
           <div
             v-if="icon"
-            :class="iconSmall ? 'py-3 px-4' : 'pa-8'"
+            :class="iconSmall ? 'py-3 px-4' : 'pa-3'"
           >
             <v-icon
               :large="!iconSmall"
@@ -129,7 +129,7 @@ export default {
       )
     },
 
-    
+
   },
 
   data: () => ({

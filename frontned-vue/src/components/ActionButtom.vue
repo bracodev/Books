@@ -10,8 +10,8 @@
         v-on:click="click(item)"
       >
         <v-icon v-if="type == 'view'" class="default">mdi-magnify</v-icon>
-        <v-icon v-else-if="type == 'edit'"  class="default">mdi-square-edit-outline</v-icon>
-        <v-icon v-else-if="type == 'delete'"  class="default">'mdi-trash-can-outline'</v-icon>
+        <v-icon v-else-if="type == 'edit'">mdi-square-edit-outline</v-icon>
+        <v-icon v-else-if="type == 'delete'">mdi-trash-can-outline</v-icon>
         <v-icon v-else>{{ icon }}</v-icon>
       </v-btn>
     </template>
